@@ -40,8 +40,14 @@
 			case NX_KEYTYPE_PLAY:
                 [self sendMessage:@"play"];
 				return;
+			case NX_KEYTYPE_NEXT:
+                [self sendMessage:@"next"];
+                return;
 			case NX_KEYTYPE_FAST:
                 [self sendMessage:@"next"];
+                return;
+			case NX_KEYTYPE_PREVIOUS:
+                [self sendMessage:@"back"];
                 return;
 			case NX_KEYTYPE_REWIND:
                 [self sendMessage:@"back"];
